@@ -1,0 +1,21 @@
+QUADROFLOW — SITE FINAL
+
+Estrutura:
+- index.html   = Landing Page principal
+- acesso.html  = Página de acesso / compra
+- download.html = Página de download
+- css/style.css = identidade visual compartilhada
+- js/landing.js = comportamento da landing
+- js/access-download.js = comportamento das páginas de acesso/download
+- images/ = imagens e identidade visual compartilhadas
+
+Tipografia:
+- DM Sans = leitura, navegação, UI e textos
+- Playfair Display = headlines editoriais
+
+Fluxo:
+Landing -> acesso.html -> WhatsApp/Pix -> download.html
+
+IMPORTANTE:
+Substituir os links placeholder #whatsapp-link pelo link oficial do grupo.
+Substituir o link do botão de download em download.html pelo arquivo/URL real.

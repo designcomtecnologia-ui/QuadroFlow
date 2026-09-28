@@ -1,0 +1,32 @@
+QUADROFLOW — PACOTE FINAL COMPLETO
+
+SITE
+site/index.html       Landing Page
+site/acesso.html      Acesso/compra
+site/download.html    Abertura do QuadroFlow
+
+PWA
+pwa/QuadroFlow.html   Aplicação principal
+pwa/index.html        Entrada web limpa do PWA
+pwa/entregues.html    Arquivo de entregues
+pwa/lixeira.html      Lixeira
+pwa/qf-storage.js     Persistência IndexedDB
+pwa/manifest.json     Manifest PWA
+pwa/service-worker.js Cache/offline/atualização
+
+DOCUMENTAÇÃO
+BRIEFING.md
+PRD.md
+SPEC.md
+WORKFLOWS.md
+COMO_USAR.md
+CONFIGURACAO.md
+
+PUBLICAÇÃO
+1. Publique o site e o PWA em HTTPS.
+2. Configure o link real do WhatsApp em site/js/access-download.js.
+3. Mantenha site/ e pwa/ no mesmo nível, ou altere a URL de download no arquivo indicado.
+4. O cliente acessa a Landing Page, entra no grupo, recebe o acesso e abre o PWA.
+5. A instalação é orientada pelo próprio aplicativo.
+
+O ZIP é o pacote mestre. O cliente final não precisa receber este ZIP.

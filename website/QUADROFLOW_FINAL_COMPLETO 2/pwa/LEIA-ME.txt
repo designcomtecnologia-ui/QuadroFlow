@@ -1,0 +1,41 @@
+QUADROFLOW — PACOTE AJUSTADO
+
+Arquivos principais
+- QuadroFlow.html — quadro principal
+- entregues.html — arquivo separado de Tarefas Entregues
+- lixeira.html — lixeira separada
+- dados.json — dados auxiliares de exemplo
+- QuadroFlow.ico / quadroflow-icon-256.png — ícones
+- logo-quadroflow.png — logo
+- manifest.json — manifesto
+- Abrir_QuadroFlow.bat — abrir no Windows
+- Criar_Atalho_Desktop.ps1 — criar atalho no Windows
+- Abrir_QuadroFlow.command — abrir no macOS
+- Abrir_QuadroFlow.sh — abrir no Linux
+
+Ajustes desta versão
+1. Post-it: Cliente → Título → Texto → prioridade → anexos/prévias → URLs.
+2. Cliente: 11px, peso 300.
+3. Título: 16px, peso 500.
+4. Texto: 13px, peso 400.
+5. Prioridade com ponto visual: Alta vermelho, Média amarelo, Baixa verde.
+6. Projeto e Tags removidos do formulário.
+7. Botão Salvar e botão Filtrar usam #28A5C6.
+8. Imagens e vídeos têm visualização; PDFs têm prévia integrada. Word/Excel usam identificação visual e fallback de abertura quando o navegador não renderizar nativamente.
+9. O fundo do post-it é sempre determinado pelo quadrante atual. A cor antiga gravada no post-it não é usada.
+10. Quadrantes fixos: Tarefas, Iniciar as tarefas, Tarefa em produção, Tarefa resolvida e Tarefa entregue.
+11. Tarefa entregue fica lilás e, após 2 dias, vai para entregues.html. Não vai para a lixeira automaticamente.
+12. Exclusão manual envia a tarefa para lixeira.html. Na lixeira existem apenas Voltar e Excluir.
+13. Restaurar recalcula a cor conforme o quadrante de destino.
+14. Filtros abrangem tarefas ativas e tarefas arquivadas/entregues.
+15. Até 4 quadrantes dividem a largura. A partir de 5, cada quadrante mantém cerca de 310px e usa rolagem horizontal com setas.
+16. Persistência em localStorage.
+
+IMPORTANTE
+É uma aplicação local, sem servidor. Abra QuadroFlow.html diretamente no navegador.
+
+DESEMPENHO
+- O QuadroFlow usa IndexedDB para armazenar anexos sem inflar o localStorage.
+- Alterações de uma tarefa atualizam apenas o elemento afetado sempre que possível.
+- O salvamento interno é agrupado para reduzir gravações repetidas.
+- Na primeira abertura, anexos antigos armazenados em Base64 podem ser migrados automaticamente.
